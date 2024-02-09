@@ -1,17 +1,17 @@
-pipeline{
+pipeline {
 agent any
-stages{
-stages('build'){
-steps{
+stages {
+stage('build'){
+steps {
 echo 'building a file'
 }
 }
-stages('test'){
+stage('test')
 steps{
 echo 'testing a file'
 }
 }
-stages('depolying'){
+stage('deploy')
 steps{
 echo 'deploying a file'
 }
